@@ -25,9 +25,9 @@
 
 (global-set-key (kbd "M-x") 'smex)
 
-(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
-(add-hook 'clojure-mode-hook 'paredit-mode)
-(add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
-(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'emacs-lisp-mode-hook
+	  (lambda ()
+	    (rainbow-delimiters-mode) 
+	    (paredit-mode)))
 
 (provide 'evply-foundation)

@@ -9,5 +9,6 @@
 
 (require 'evply-foundation)
 
-;; (require 'evply-clojure)
+(require 'evply-clojure)
+
 ;; (require 'evply-web)
