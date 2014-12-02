@@ -11,4 +11,4 @@
 
 (require 'evply-clojure)
 
-;; (require 'evply-web)
+(require 'evply-web)
