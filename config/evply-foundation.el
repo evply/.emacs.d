@@ -22,6 +22,7 @@
 
 (require 'yasnippet)
 (yas-global-mode t)
+(setq yas-snippet-dirs "~/.emacs.d/snippets")
 
 (global-set-key (kbd "M-x") 'smex)
 

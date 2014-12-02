@@ -4,7 +4,7 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
-(set-default-font "Monospace 12")
+(set-default-font "Monospace 11")
 
 (column-number-mode t)
 (global-hl-line-mode)
