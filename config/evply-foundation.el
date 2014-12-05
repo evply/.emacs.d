@@ -1,6 +1,7 @@
 ;;;evply-foundation.el
 ;;;basic settings would used packages not build in
 ;;;dependence: evply-package.el
+ 
 
 (require-packages '(color-theme
 		    color-theme-solarized 
@@ -9,8 +10,7 @@
 		    magit
 		    smex
 		    paredit
-		    rainbow-delimiters
-		    ))
+		    rainbow-delimiters))
 
 (require 'color-theme)
 (require 'color-theme-solarized)
@@ -31,4 +31,8 @@
 	    (rainbow-delimiters-mode) 
 	    (paredit-mode)))
 
-(provide 'evply-foundation)
+(require 'scim-bridge)
+(add-hook 'after-init-hook 'scim-mode-on)
+(scim-define-common-key (kbd "s-SPC") t)
+
+(provide 'evply-foundation)   

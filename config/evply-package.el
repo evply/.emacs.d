@@ -20,7 +20,7 @@
 (package-initialize)
 
 ;;not elpa
-;; (let ((default-directory "~/.emacs.d/nelpa/"))
-;;   (normal-top-level-add-subdirs-to-load-path))
+(let ((default-directory "~/.emacs.d/extern/"))
+  (normal-top-level-add-subdirs-to-load-path))
 
 (provide 'evply-package)
