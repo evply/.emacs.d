@@ -2,7 +2,6 @@
 ;;;basic settings would used packages not build in
 ;;;dependence: evply-package.el
  
-
 (require-packages '(color-theme
 		    color-theme-solarized 
 		    auto-complete
