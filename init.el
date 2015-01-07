@@ -1,13 +1,15 @@
-;;;init.el
 (add-to-list 'load-path "~/.emacs.d/config")
 
-(require 'evply-default)
+(require 'axpiry-default)
 
 ;refer function require-package,require-packages 
 ;add not elpa packages dir to load-path
-(require 'evply-package)
+(require 'axpiry-package)
 
-(require 'evply-foundation)
-(require 'evply-clojure)
-(require 'evply-web)
-(require 'evply-org)
+(require 'axpiry-foundation)
+
+(require 'axpiry-lisp)
+(require 'axpiry-clojure)
+(require 'axpiry-python)
+(require 'axpiry-web)
+(require 'axpiry-org)

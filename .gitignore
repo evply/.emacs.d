@@ -3,5 +3,6 @@ elpa/
 *.desktop
 smex-items
 .*
-extern/
-!extern/README
+ido*
+site-lisp/
+!site-lisp/README
