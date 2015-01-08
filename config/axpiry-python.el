@@ -1,8 +1,9 @@
-(require-packages '())
+(require-packages '(python-mode
+		    jedi))
 
-(defun python-settings ()
-  ())
+(require 'python-mode)
 
-(add-hook 'python-mode-hook 'python-settings)
+(add-hook 'python-mode-hook 'jedi:setup)
+
 
 (provide 'axpiry-python)

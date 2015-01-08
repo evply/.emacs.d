@@ -14,11 +14,11 @@
 
 (electric-indent-mode 1)
 ;;Auto-indent yanked (pasted) code
-(dolist (command '(yank yank-pop))
-  (eval `(defadvice ,command (after indent-region activate)
-	   (and (not current-prefix-arg)
-		(let ((mark-even-if-inactive transient-mark-mode))
-		  (indent-region (region-beginning) (region-end) nil))))))
+;; (dolist (command '(yank yank-pop))
+;;   (eval `(defadvice ,command (after indent-region activate)
+;; 	   (and (not current-prefix-arg)
+;; 		(let ((mark-even-if-inactive transient-mark-mode))
+;; 		  (indent-region (region-beginning) (region-end) nil))))))
 
 (require 'ido)
 (ido-mode t)

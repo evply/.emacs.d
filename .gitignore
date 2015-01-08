@@ -6,3 +6,4 @@ smex-items
 ido*
 site-lisp/
 !site-lisp/README
+eshell/

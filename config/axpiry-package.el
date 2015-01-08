@@ -4,9 +4,10 @@
 ;;(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
+
 (defun require-package (package)
   (if (not (package-installed-p package))
-      (progn 
+      (progn
 	(package-refresh-contents)
 	(package-install package))))
 

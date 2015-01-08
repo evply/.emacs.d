@@ -9,7 +9,4 @@
 (require 'axpiry-foundation)
 
 (require 'axpiry-lisp)
-(require 'axpiry-clojure)
 (require 'axpiry-python)
-(require 'axpiry-web)
-(require 'axpiry-org)
