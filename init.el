@@ -2,11 +2,8 @@
 
 (require 'axpiry-default)
 
-;refer function require-package,require-packages 
-;add not elpa packages dir to load-path
-(require 'axpiry-package)
+(require 'axpiry-package)          ;;Needs to be loaded befor below modules
 
 (require 'axpiry-foundation)
-
 (require 'axpiry-lisp)
 (require 'axpiry-python)
